@@ -2,8 +2,8 @@
     background: linear-gradient(90deg,#8e54e9,#4776e6);
 }
 
-
-.brackets a:before, div.brackets a:after
+/*The navbar animation*/
+.brackets a:before, .brackets a:after
 {
     position: absolute;
     opacity: 0;
@@ -26,22 +26,28 @@
     transform: translateX(-10px);
 }
 
-.brackets a:hover:before, div.brackets a:hover:after
+.brackets a:hover:before, .brackets a:hover:after
 {
     opacity: 1;
     transform: translateX(0px);
 }
+
+
 .navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover {
     background-color:transparent !important;
 }
 .navbar-item{
     padding: 1.00rem 1.25rem;
 }
+
+
 .button-register{
+    
     background-color: Transparent;
     background-repeat:no-repeat;
     cursor:pointer;
     overflow: hidden;
     outline:none;
     color: #fff;
+
 }
