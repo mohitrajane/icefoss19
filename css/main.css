@@ -48,6 +48,16 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
-    color: #fff;
+    color: #14db7b;
+    border-color:##ffdd57;
 
 }
+
+.button:hover, .button.is-hovered {
+    color: #ffdd57;
+    border-color:#14db7b; 
+}
+
+/*.card{
+    padding-left: 1rem;
+}*/
