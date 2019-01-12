@@ -49,7 +49,7 @@
     overflow: hidden;
     outline:none;
     color: #14db7b;
-    border-color:##ffdd57;
+    border-color:#ffdd57;
 
 }
 
@@ -57,7 +57,3 @@
     color: #ffdd57;
     border-color:#14db7b; 
 }
-
-/*.card{
-    padding-left: 1rem;
-}*/
