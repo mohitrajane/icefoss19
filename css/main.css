@@ -48,12 +48,16 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
-    color: #14db7b;
-    border-color:#ffdd57;
+    color: #ffdd57;
+    border-color:#14db7b;
 
 }
 
 .button:hover, .button.is-hovered {
-    color: #ffdd57;
-    border-color:#14db7b; 
+    color:#14db7b;
+    border-color:#ffdd57; 
+}
+
+.column, is-one-fourth{
+    padding-bottom:3rem; 
 }
