@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bulma-timeline.min.css">
     <link rel="stylesheet" href="css/pricing-table.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>-->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
         <nav class="navbar  landing-page  is-fixed-top" role="navigation" aria-label="main navigation">
@@ -301,9 +301,9 @@
           <img src="images/circle_yellow1.png">
         </div>
         <div class="timeline-content">
-          <p class="heading has-text-white is-size-5 title">Event name</p>
-          <p class="heading has-text-white is-size-8 subtitle">xx:xx pm</p>
-          <p class="heading has-text-white is-size-9 subtitle">Details>></p>
+          <a class=" heading is-size-5 title glow has-text-white" href="#show-modal">Event name <i class="fas fa-angle-right "></i></a>
+          <p class="heading has-text-white is-size-9 subtitle">xx:xx pm</p>
+
         </div>
       </div>
       <div class="timeline-item is-warning">
@@ -311,7 +311,7 @@
           <img src="images/circle_yellow1.png">
         </div>
         <div class="timeline-content">
-          <p class="heading has-text-white title is-size-5">Event name</p>
+          <p class="heading has-text-white title is-size-5 glow">Event name <i class="fas fa-angle-right"></i></p>
           <p class="heading has-text-white subtitle is-size-9">xx:xx pm</p>
         </div>
       </div>
@@ -320,13 +320,33 @@
               <img src="images/circle_yellow1.png">
             </div>
         <div class="timeline-content">
-          <p class="heading has-text-white title is-size-5">Event name</p>
+          <p class="heading has-text-white title is-size-5 glow">Event name <i class="fas fa-angle-right"></i></p>
           <p class="heading has-text-white subtitle is-size-9"> xx:xx pm</p>
         </div>
       </div>
     </div>
   </div>
   </section>
+
+
+  <!-- Modals for the Events-->
+
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Modal title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <!-- Content ... -->
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+        <button class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
   
   
   <section id="register">
