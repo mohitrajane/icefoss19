@@ -61,4 +61,6 @@
 .column, is-one-fourth{
     padding-bottom:3rem; 
 }
-
+.glow:hover {
+    text-shadow: 0 0 10px #ffe600;
+}
