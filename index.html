@@ -25,7 +25,6 @@
                         <div id="navbar" class="navbar-menu">
                         <div class="navbar-end">
                         <div class="navbar-start brackets">
-                            <!--<a class="navbar-item has-text-white has-text-centered" href="#home"><p>Home</p></a>-->
                             <a class="navbar-item has-text-white has-text-centered" href="#about"><p>About</p></a>
                             <a class="navbar-item has-text-white has-text-centered" href="#person"><p>Speakers</p></a>
                             <a class="navbar-item has-text-white has-text-centered" href="#workshop"><p>Workshops</p></a>
@@ -181,26 +180,15 @@
         <div class="pricing-plan is-warning">
           <div class="plan-header">Speaker Name</div>-->
           <!--<div class="plan-price"><span class="title is-4">Naufal Ibrahim</span></div>
+
           <div class="card-image">
               <figure class="image is-4by3">
                 <img src="images/Speakers/Naufal-Go.jpeg"" alt="Placeholder image">
               </figure>
-            </div>-->
-          <!--<div class="plan-items">
-            <div class="plan-item">20GB Storage</div>
-            <div class="plan-item">100 Domains</div>
-            <div class="plan-item">-</div>
-            <div class="plan-item">-</div>
-          </div>
-          <div class="plan-footer">
-            button class="button is-fullwidth">Register</button>
-            <p><br>Worked on development tools ranging from test harnesses to continuous integration frameworks to test specification languages and release management tools.
 
-              I am proficient in writing command line and web based tools to assist and streamline all stages of the software development process.
-              
-              That's my professional side. On my own time, I spend time with free software projects mainly in Python some of which are linked to from my site.
-              
-              Specialties: Tool development, design of extensible software systems, Web development, distributed systems<br></p>
+            </div>
+          <div class="plan-footer">
+            <p><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quas iste porro tempora, nesciunt illo rerum possimus cupiditate optio similique eum aliquid maiores itaque voluptates, consequuntur explicabo! Esse, quis amet.<br></p>
           </div>
         </div>
       </div>-->
@@ -208,6 +196,7 @@
       <!--<div class="column is-one-fourth">
         <div class="pricing-plan is-warning">
           <div class="plan-price"><span class="title is-4">Haridas N</span></div>
+
           <div class="card-image">
               <figure class="image is-4by3">
                 <img src="images/Speakers/Haridas-Hadoop.jpeg" alt="Placeholder image">
@@ -229,6 +218,7 @@
         <div class="column is-one-fourth">
           <div class="pricing-plan is-warning">
             <div class="plan-price"><span class="title is-4">Johny James</span></div>
+
             <div class="card-image">
                 <figure class="image is-4by3">
                   <img src="images/Speakers/Johny-DockerKubernetes.jpeg" alt="Placeholder image">
@@ -249,6 +239,7 @@
         <div class="column is-one-fourth">
           <div class="pricing-plan is-warning">
             <div class="plan-price"><span class="title is-4">Midhun Kandoth</span></div>
+
             <div class="card-image">
                 <figure class="image is-4by3">
                   <img src="images/Speakers/Midhun-DockerKubernetes.jpeg" alt="Placeholder image">
@@ -275,7 +266,7 @@
           <img src="images/circle_yellow1.png">
         </div>
         <div class="timeline-content">
-          <a class=" heading is-size-5 title glow has-text-white" href="#modal-ter">Event name <i class="fas fa-angle-right "></i></a>
+          <a class=" heading is-size-5 title glow has-text-white modal-button"  data-target="#modal">Event name 1 <i class="fas fa-angle-right "></i></a>
           <p class="heading has-text-white is-size-9 subtitle">xx:xx pm</p>
 
         </div>
@@ -305,22 +296,30 @@
 
   <!-- Modals for the Events-->
 
-  <div class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Modal title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <!-- Content ... -->
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Save changes</button>
-        <button class="button">Cancel</button>
-      </footer>
-    </div>
-  </div>
+  <div id="modal" class = "modal">
+    <div class = "modal-background"></div>
+    <div class = "modal-card">
+       <header class = "modal-card-head">
+          <p class = "modal-card-title">Event 1</p>
+          <button  id="modal-close" class = "delete" aria-label="close"></button>
+       </header>
+       <section class = "modal-card-body">
+          <div class = "content">
+             <h1>Level One</h1>
+             <p>This is simple text.This is simple text.This is simple text.This is simple text.</p>
+             <h2>Level Two</h2>
+             <p>This is simple text.This is simple text.This is simple text.This is simple text.</p>
+             <h3>Level Three</h3>
+             <blockquote>This is simple text.This is simple text.This is simple text.This is simple text.</blockquote>
+             <h4>Level Four</h4>
+             <p>This is simple text.This is simple text.This is simple text.This is simple text.</p>
+             <h5>Level Five</h5>
+             <p>This is simple text.This is simple text.This is simple text.This is simple text.</p>
+             </ul>
+          </div>
+           </section>
+               </div>
+            </div>
   
   
   <section id="register">
@@ -347,5 +346,6 @@
   <script src= "js/jquery-3.3.1.min.js"></script>
   <script src="js/navbar.js"></script>
   <script src = "js/smooth_scroll.js"></script>
+  <script src="js/modal.js"></script>
   </body>
 </html>
