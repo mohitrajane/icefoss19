@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="css/bulma-timeline.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar  landing-page  is-fixed-top" role="navigation" aria-label="main navigation">
@@ -29,6 +35,7 @@
             <a class="navbar-item has-text-white has-text-centered" href="#workshop"><p>Workshops</p></a>
             <a class="navbar-item has-text-white has-text-centered" href="#register"><p>Register</p></a>
             <a class="navbar-item has-text-white has-text-centered" href="#contact"><p>Contact Us</p></a>
+            <a class="navbar-item has-text-white has-text-centered" href="#venue"><p>Venue</p></a>            
           </div>
         </div>
       </div>
@@ -53,7 +60,7 @@
         <div class="columns" style="padding-bottom:3rem;">
           <div class="column">
             <p class="has-text-centered is-size-3" style="padding-top:3rem;color: #606ae7;">About ICEFOSS</p>
-            <p class="is-size-4 has-text-centered" style="padding-top:3rem;padding-bottom: 3rem;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quas iste porro tempora, nesciunt illo rerum possimus cupiditate optio similique eum aliquid maiores itaque voluptates, consequuntur explicabo! Esse, quis amet.</p>
+            <p class="is-size-4 has-text-centered" style="padding-top:3rem;padding-bottom: 3rem;"> ICEFOSS (ICEFOSS is a Conference for Enthusiasts of Free and Open Source Software) is Free Software Conference organized by Fisat Free Software Cell (FFSC). ICEFOSS 2019, scheduled on the 19<sup>th</sup> and 20<sup>th</sup> of February 2019 includes workshops covering different aspects of Free Software. ICEFOSS 2019 is the seventh edition of this conference.</p>
           </div>
           <div class="column">
             <p class="bd-notification is-primary has-text-centered is-size-3" style="padding-top:3rem;color: #606ae7;">About Fisat</p>
@@ -370,24 +377,49 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" style="background:#ecf0fa;">
       <p class="bd-notification is-primary has-text-centered is-size-3" style="padding-top:3rem;color: #606ae7;">Contact</p>
       <p class="has-text-centered">Icon:Name   icon:phno</p>
-      <p class="has-text-centered">Icon:Name   icon:phno</p>
+      <p class="has-text-centered" style="padding-bottom:3rem;">Icon:Name   icon:phno</p>
+    </section>
+
+    <section id="venue">
+      <div class="container">
+        <div class="title has-text-centered" style="color:#606ae7; padding-top: 4rem;">Venue</div>
+        <!--<p class="has-text-centered is-size-3" style="padding-top:3rem;color: #606ae7;">Venue</p>-->
+        <p class="is-size-4 has-text-centered" style="padding-top:1rem;">
+          Federal Institute of Science and Technology<br>
+          Hormis Nagar, Mookkannoor<br>
+          Angamaly, Kerala-683577
+        </p>
+        <p class="is-size-4 has-text-centered" style="padding-bottom: 3rem;">
+          <a href="http://fisat.ac.in/pages/conveyance-facilities">Click here for conveyance details.</a>
+        </p>
+      </div>
+      <div id="map"></div>
     </section>
 
   
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          Made with <strong><a href="https://bulma.io">Bulma</a></strong>
-        </p>
+    <footer class="footer" style="background-color:#4f72e6;">
+      <div class="content has-text-centered has-text-white">
+        <p>Made with <strong><a href="https://bulma.io" class="has-text-grey-lighter">Bulma</a></strong></p>
       </div>
     </footer>
   
+    <script>
+      function initMap() {
+        var fisat = {lat: 10.232954, lng: 76.408754};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 16, center: fisat});
+        var marker = new google.maps.Marker({position: fisat, map: map});
+      }
+    </script>
     <script src= "js/jquery-3.3.1.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src = "js/smooth_scroll.js"></script>
     <script src="js/modal.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuuU1CLP8qBFCrkXJU6fNRftZyqs7jeAI&callback=initMap">
+    </script>
   </body>
 </html>
