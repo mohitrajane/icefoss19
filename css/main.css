@@ -1,10 +1,9 @@
-.landing-page{
+.landing-page {
     background: linear-gradient(90deg,#8e54e9,#4776e6);
 }
 
 /*The navbar animation*/
-.brackets a:before, .brackets a:after
-{
+.brackets a:before, .brackets a:after {
     position: absolute;
     opacity: 0;
     font-size: 35px;
@@ -12,37 +11,32 @@
     transition: all 0.3s;
 }
 
-.brackets a:before
-{
+.brackets a:before {
     content: '(';
     left: 0px;
     transform: translateX(10px);
 }
 
-.brackets a:after
-{
+.brackets a:after {
     content: ')';
     right: 0px;
     transform: translateX(-10px);
 }
 
-.brackets a:hover:before, .brackets a:hover:after
-{
+.brackets a:hover:before, .brackets a:hover:after {
     opacity: 1;
     transform: translateX(0px);
 }
 
-
 .navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover {
     background-color:transparent !important;
 }
+
 .navbar-item{
     padding: 1.00rem 1.25rem;
 }
 
-
 .button-register{
-    
     background-color: Transparent;
     background-repeat:no-repeat;
     cursor:pointer;
@@ -50,7 +44,6 @@
     outline:none;
     color: #ffdd57;
     border-color:#14db7b;
-
 }
 
 .button:hover, .button.is-hovered {
@@ -58,9 +51,10 @@
     border-color:#ffdd57; 
 }
 
-.column, is-one-fourth{
+.column, is-one-fourth {
     padding-bottom:3rem; 
 }
+
 .glow:hover {
     text-shadow:  0 0 10px #ffe600;
 }
