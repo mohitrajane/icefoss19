@@ -45,9 +45,8 @@
     color: #ffdd57;
     border-color:#14db7b;
 }
-.button-gradient{
-    
 
+.button-gradient{
     background-repeat:no-repeat;
     cursor:pointer;
     overflow: hidden;
