@@ -46,6 +46,15 @@
     border-color:#14db7b;
 }
 
+.button-gradient{
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: #ffffff;
+    background-color: #4f72e6;
+}
+
 .button:hover, .button.is-hovered {
     color:#14db7b;
     border-color:#ffdd57; 
