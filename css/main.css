@@ -75,3 +75,26 @@
 .plan-footer {
     overflow-x: auto;
 }
+
+.has-image-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.q-style{
+    color:#95afba;
+    font-size: 3rem;
+    border-left:0.25rem solid #def2c8;
+    padding-left: 1rem;
+}
+.a-style{
+    color:#def2c8;
+    font-size: 3rem; 
+    border-left:0.25rem solid #95afba;
+    padding-left: 1rem;
+}
+.td-style{
+    background-color:#4f72e6;
+    padding-bottom: 0rem;
+    color:#a3cef1;
+}
